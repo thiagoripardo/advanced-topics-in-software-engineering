@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/constructor3D/src" modelPluginID="constructor3D"
+    modelName="Constructor3d" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="8.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>constructor3D.ecore</foreignModel>
+  <genPackages prefix="Constructor3D" disposableProviderFactory="true" ecorePackage="constructor3D.ecore#/">
+    <genClasses ecoreClass="constructor3D.ecore#//Canvas">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Canvas/form"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Canvas/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Canvas/name"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="constructor3D.ecore#//Form">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Form/face"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference constructor3D.ecore#//Form/canvas"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Form/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Form/name"/>
+    </genClasses>
+    <genClasses ecoreClass="constructor3D.ecore#//Face">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference constructor3D.ecore#//Face/form"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Face/id"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference constructor3D.ecore#//Face/vertex"/>
+    </genClasses>
+    <genClasses ecoreClass="constructor3D.ecore#//Vertex">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Vertex/posX"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Vertex/posY"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Vertex/posZ"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Vertex/id"/>
+    </genClasses>
+    <genClasses ecoreClass="constructor3D.ecore#//Cube"/>
+    <genClasses ecoreClass="constructor3D.ecore#//Tree"/>
+    <genClasses ecoreClass="constructor3D.ecore#//House"/>
+  </genPackages>
+</genmodel:GenModel>

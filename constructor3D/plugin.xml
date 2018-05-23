@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated constructor3d -->
+      <package
+            uri="http://www.example.org/constructor3D"
+            class="constructor3D.Constructor3DPackage"
+            genModel="model/constructor3d.genmodel"/>
+   </extension>
+
+</plugin>

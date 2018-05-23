@@ -1,0 +1,25 @@
+[comment encoding = UTF-8 /]
+[**
+ * The documentation of the module generate.
+ */]
+[module generate('http://www.example.org/constructor3D')]
+
+
+[**
+ * The documentation of the template generateElement.
+ * @param aCanvas
+ */]
+[template public generateElement(aCanvas : Canvas)]
+[comment @main/]
+[file (aCanvas.name.concat('.obj'), false, 'UTF-8')]
+	[for (aForm : Form | aCanvas.form)]
+
+o [aForm.name/]
+		[for (aFace : Face | aForm.face)]
+			[for (aVertex : Vertex | aFace.vertex)]
+v [aVertex.posX/] [aVertex.posY/] [aVertex.posZ/]
+			[/for]
+		[/for]	
+	[/for]
+[/file]
+[/template]

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated constructor3d -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="constructor3D.presentation.Constructor3DModelWizardID"
+            name="%_UI_Constructor3DModelWizard_label"
+            class="constructor3D.presentation.Constructor3DModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/Constructor3DModelFile.gif">
+         <description>%_UI_Constructor3DModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated constructor3d -->
+      <editor
+            id="constructor3D.presentation.Constructor3DEditorID"
+            name="%_UI_Constructor3DEditor_label"
+            icon="icons/full/obj16/Constructor3DModelFile.gif"
+            extensions="constructor3d"
+            class="constructor3D.presentation.Constructor3DEditor"
+            contributorClass="constructor3D.presentation.Constructor3DActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
