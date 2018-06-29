@@ -35,7 +35,7 @@ public interface Vertex extends EObject {
 	 * @return the value of the '<em>Pos X</em>' attribute.
 	 * @see #setPosX(float)
 	 * @see constructor3D.Constructor3DPackage#getVertex_PosX()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Float"
+	 * @model
 	 * @generated
 	 */
 	float getPosX();
@@ -61,7 +61,7 @@ public interface Vertex extends EObject {
 	 * @return the value of the '<em>Pos Y</em>' attribute.
 	 * @see #setPosY(float)
 	 * @see constructor3D.Constructor3DPackage#getVertex_PosY()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Float"
+	 * @model
 	 * @generated
 	 */
 	float getPosY();
@@ -87,7 +87,7 @@ public interface Vertex extends EObject {
 	 * @return the value of the '<em>Pos Z</em>' attribute.
 	 * @see #setPosZ(float)
 	 * @see constructor3D.Constructor3DPackage#getVertex_PosZ()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Float"
+	 * @model
 	 * @generated
 	 */
 	float getPosZ();
@@ -113,7 +113,7 @@ public interface Vertex extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(int)
 	 * @see constructor3D.Constructor3DPackage#getVertex_Id()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+	 * @model
 	 * @generated
 	 */
 	int getId();

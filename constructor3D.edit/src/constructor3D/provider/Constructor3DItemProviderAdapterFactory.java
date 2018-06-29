@@ -210,6 +210,75 @@ public class Constructor3DItemProviderAdapterFactory extends Constructor3DAdapte
 	}
 
 	/**
+	 * This keeps track of the one adapter used for all {@link constructor3D.Grid} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected GridItemProvider gridItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link constructor3D.Grid}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createGridAdapter() {
+		if (gridItemProvider == null) {
+			gridItemProvider = new GridItemProvider(this);
+		}
+
+		return gridItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link constructor3D.Column} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected ColumnItemProvider columnItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link constructor3D.Column}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createColumnAdapter() {
+		if (columnItemProvider == null) {
+			columnItemProvider = new ColumnItemProvider(this);
+		}
+
+		return columnItemProvider;
+	}
+
+	/**
+	 * This keeps track of the one adapter used for all {@link constructor3D.World} instances.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected WorldItemProvider worldItemProvider;
+
+	/**
+	 * This creates an adapter for a {@link constructor3D.World}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Adapter createWorldAdapter() {
+		if (worldItemProvider == null) {
+			worldItemProvider = new WorldItemProvider(this);
+		}
+
+		return worldItemProvider;
+	}
+
+	/**
 	 * This returns the root adapter factory that contains this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -314,6 +383,9 @@ public class Constructor3DItemProviderAdapterFactory extends Constructor3DAdapte
 		if (cubeItemProvider != null) cubeItemProvider.dispose();
 		if (treeItemProvider != null) treeItemProvider.dispose();
 		if (houseItemProvider != null) houseItemProvider.dispose();
+		if (gridItemProvider != null) gridItemProvider.dispose();
+		if (columnItemProvider != null) columnItemProvider.dispose();
+		if (worldItemProvider != null) worldItemProvider.dispose();
 	}
 
 }

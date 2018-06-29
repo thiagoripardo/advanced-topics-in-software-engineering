@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" name="project" version="12.0.0.2017041100">
+  <ownedViewpoints name="MyViewpoint">
+    <ownedRepresentations xsi:type="description_1:DiagramDescription" name="canvas" label="canvas" initialisation="true" domainClass="constructor3D::Canvas" enablePopupBars="true">
+      <metamodel href="http://www.example.org/constructor3D#/"/>
+      <defaultLayer name="Default">
+        <edgeMappings name="Relation" sourceMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']/@subContainerMappings[name='form']/@subNodeMappings[name='face']" targetMapping="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']/@subContainerMappings[name='form']/@subNodeMappings[name='vertex']" targetFinderExpression="[vertexList/]">
+          <style sizeComputationExpression="2">
+            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <centerLabelStyleDescription>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            </centerLabelStyleDescription>
+          </style>
+        </edgeMappings>
+        <containerMappings name="world" domainClass="constructor3D::World" childrenPresentation="VerticalStack">
+          <subContainerMappings name="grid" domainClass="constructor3D::Grid" childrenPresentation="HorizontalStack">
+            <subContainerMappings name="column" semanticCandidatesExpression="feature:eAllContents" domainClass="constructor3D::Column" childrenPresentation="VerticalStack">
+              <subContainerMappings name="form" label="form" semanticCandidatesExpression="feature:form" domainClass="constructor3D::Form" childrenPresentation="List">
+                <subNodeMappings name="face" label="face" semanticCandidatesExpression="feature:face" domainClass="constructor3D::Face">
+                  <style xsi:type="style:BundledImageDescription" labelExpression="feature:id" sizeComputationExpression="1" labelPosition="node" resizeKind="NSEW" shape="triangle">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='purple']"/>
+                  </style>
+                </subNodeMappings>
+                <subNodeMappings name="vertex" semanticCandidatesExpression="feature:vertex" domainClass="constructor3D::Vertex">
+                  <style xsi:type="style:DotDescription" labelExpression="feature:id" sizeComputationExpression="1" labelPosition="node" resizeKind="NSEW" strokeSizeComputationExpression="1">
+                    <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                    <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+                  </style>
+                </subNodeMappings>
+                <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom">
+                  <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                  <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                  <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
+                </style>
+              </subContainerMappings>
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:id">
+                <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+                <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+                <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+              </style>
+            </subContainerMappings>
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:id">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+              <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
+            </style>
+          </subContainerMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="feature:id">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_blue']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="World">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Grid" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Grid" referenceName="grid">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Grid)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Column" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Column" referenceName="column">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Column)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="World" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::World" referenceName="world">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::World)->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Formas">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Tree" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']/@subContainerMappings[name='form']">
+            <variable name="form"/>
+            <viewVariable name="formView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:form">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Tree" referenceName="form" variableName="instanceForm">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="cubo"/>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertici" valueExpression="Vertci"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="Cube" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']/@subContainerMappings[name='form']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Cube" referenceName="form" variableName="instanceForm">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'Cube_'+(self.siblings()->filter(constructor3D::Cube)->size()+1)"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.eContainer().eContainer().id"/>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.form.vertex->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posX" valueExpression="1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posY" valueExpression="-1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posZ" valueExpression="-1.000000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.form.vertex->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posX" valueExpression="1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posY" valueExpression="-1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posZ" valueExpression="1.000000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.form.vertex->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posX" valueExpression="-1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posY" valueExpression="-1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posZ" valueExpression="1.000000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.form.vertex->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posX" valueExpression="-1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posY" valueExpression="-1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posZ" valueExpression="-1.000000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.form.vertex->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posX" valueExpression="1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posY" valueExpression="1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posZ" valueExpression="-1.000000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.form.vertex->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posX" valueExpression="1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posY" valueExpression="1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posZ" valueExpression="1.000000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.form.vertex->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posX" valueExpression="-1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posY" valueExpression="1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posZ" valueExpression="1.000000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Vertex" referenceName="vertex">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:container.form.vertex->size()"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posX" valueExpression="-1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posY" valueExpression="1.000000"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="posZ" valueExpression="-1.000000"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(2)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(4)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(1)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(8)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(6)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(5)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(5)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(2)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(1)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(6)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(3)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(2)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(3)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(8)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(4)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(1)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(8)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(5)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(2)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(3)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(4)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(8)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(7)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(6)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(5)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(6)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(2)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(6)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(7)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(3)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(3)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(7)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(8)"/>
+                  </subModelOperations>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="constructor3D::Face" referenceName="face">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="id" valueExpression="aql:self.siblings()->filter(constructor3D::Face)->size()+1"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(1)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(4)"/>
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="vertexList" valueExpression="aql:self.siblings()->at(8)"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="House" containerMappings="//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']/@subContainerMappings[name='form']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+        </toolSections>
+      </defaultLayer>
+    </ownedRepresentations>
+    <ownedJavaExtensions qualifiedClassName="cons3D.project.design.Services"/>
+  </ownedViewpoints>
+</description:Group>

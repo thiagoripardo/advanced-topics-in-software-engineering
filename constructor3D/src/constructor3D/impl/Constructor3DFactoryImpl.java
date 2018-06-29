@@ -62,6 +62,9 @@ public class Constructor3DFactoryImpl extends EFactoryImpl implements Constructo
 			case Constructor3DPackage.CUBE: return createCube();
 			case Constructor3DPackage.TREE: return createTree();
 			case Constructor3DPackage.HOUSE: return createHouse();
+			case Constructor3DPackage.GRID: return createGrid();
+			case Constructor3DPackage.COLUMN: return createColumn();
+			case Constructor3DPackage.WORLD: return createWorld();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -125,6 +128,36 @@ public class Constructor3DFactoryImpl extends EFactoryImpl implements Constructo
 	public House createHouse() {
 		HouseImpl house = new HouseImpl();
 		return house;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Grid createGrid() {
+		GridImpl grid = new GridImpl();
+		return grid;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Column createColumn() {
+		ColumnImpl column = new ColumnImpl();
+		return column;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public World createWorld() {
+		WorldImpl world = new WorldImpl();
+		return world;
 	}
 
 	/**

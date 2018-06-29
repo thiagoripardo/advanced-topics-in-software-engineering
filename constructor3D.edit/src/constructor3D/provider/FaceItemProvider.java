@@ -61,6 +61,7 @@ public class FaceItemProvider
 			super.getPropertyDescriptors(object);
 
 			addIdPropertyDescriptor(object);
+			addVertexListPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -83,6 +84,28 @@ public class FaceItemProvider
 				 false,
 				 false,
 				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
+	 * This adds a property descriptor for the Vertex List feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addVertexListPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_Face_vertexList_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Face_vertexList_feature", "_UI_Face_type"),
+				 Constructor3DPackage.Literals.FACE__VERTEX_LIST,
+				 true,
+				 false,
+				 true,
+				 null,
 				 null,
 				 null));
 	}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constructor3D:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:constructor3D="http://www.example.org/constructor3D" name="Canvas">
+  <world>
+    <grid>
+      <column/>
+      <column id="1"/>
+    </grid>
+    <grid id="1">
+      <column/>
+      <column id="1"/>
+    </grid>
+    <grid id="2">
+      <column/>
+      <column id="1"/>
+    </grid>
+  </world>
+</constructor3D:Canvas>

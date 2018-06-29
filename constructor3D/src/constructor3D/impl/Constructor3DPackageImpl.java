@@ -3,23 +3,24 @@
 package constructor3D.impl;
 
 import constructor3D.Canvas;
+import constructor3D.Column;
 import constructor3D.Constructor3DFactory;
 import constructor3D.Constructor3DPackage;
 import constructor3D.Cube;
 import constructor3D.Face;
 import constructor3D.Form;
+import constructor3D.Grid;
 import constructor3D.House;
 import constructor3D.Tree;
 import constructor3D.Vertex;
 
+import constructor3D.World;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
-import org.eclipse.emf.ecore.xml.type.XMLTypePackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -78,6 +79,27 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	private EClass houseEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass gridEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass columnEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass worldEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -123,9 +145,6 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 
 		isInited = true;
 
-		// Initialize simple dependencies
-		XMLTypePackage.eINSTANCE.eClass();
-
 		// Create package meta-data objects
 		theConstructor3DPackage.createPackageContents();
 
@@ -155,17 +174,8 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getCanvas_Form() {
-		return (EReference)canvasEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getCanvas_Id() {
-		return (EAttribute)canvasEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)canvasEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -174,7 +184,16 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	 * @generated
 	 */
 	public EAttribute getCanvas_Name() {
-		return (EAttribute)canvasEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)canvasEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getCanvas_World() {
+		return (EReference)canvasEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -192,16 +211,7 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	 * @generated
 	 */
 	public EReference getForm_Face() {
-		return (EReference)formEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EReference getForm_Canvas() {
-		return (EReference)formEClass.getEStructuralFeatures().get(1);
+		return (EReference)formEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -210,7 +220,7 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	 * @generated
 	 */
 	public EAttribute getForm_Id() {
-		return (EAttribute)formEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)formEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -219,7 +229,16 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	 * @generated
 	 */
 	public EAttribute getForm_Name() {
-		return (EAttribute)formEClass.getEStructuralFeatures().get(3);
+		return (EAttribute)formEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getForm_Vertex() {
+		return (EReference)formEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -236,17 +255,8 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFace_Form() {
-		return (EReference)faceEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	public EAttribute getFace_Id() {
-		return (EAttribute)faceEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)faceEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -254,8 +264,8 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EReference getFace_Vertex() {
-		return (EReference)faceEClass.getEStructuralFeatures().get(2);
+	public EReference getFace_VertexList() {
+		return (EReference)faceEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -335,6 +345,87 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EClass getGrid() {
+		return gridEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getGrid_Id() {
+		return (EAttribute)gridEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getGrid_Column() {
+		return (EReference)gridEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getColumn() {
+		return columnEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getColumn_Id() {
+		return (EAttribute)columnEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getColumn_Form() {
+		return (EReference)columnEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EClass getWorld() {
+		return worldEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EReference getWorld_Grid() {
+		return (EReference)worldEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EAttribute getWorld_Id() {
+		return (EAttribute)worldEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public Constructor3DFactory getConstructor3DFactory() {
 		return (Constructor3DFactory)getEFactoryInstance();
 	}
@@ -359,20 +450,19 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 
 		// Create classes and their features
 		canvasEClass = createEClass(CANVAS);
-		createEReference(canvasEClass, CANVAS__FORM);
 		createEAttribute(canvasEClass, CANVAS__ID);
 		createEAttribute(canvasEClass, CANVAS__NAME);
+		createEReference(canvasEClass, CANVAS__WORLD);
 
 		formEClass = createEClass(FORM);
-		createEReference(formEClass, FORM__FACE);
-		createEReference(formEClass, FORM__CANVAS);
 		createEAttribute(formEClass, FORM__ID);
 		createEAttribute(formEClass, FORM__NAME);
+		createEReference(formEClass, FORM__VERTEX);
+		createEReference(formEClass, FORM__FACE);
 
 		faceEClass = createEClass(FACE);
-		createEReference(faceEClass, FACE__FORM);
 		createEAttribute(faceEClass, FACE__ID);
-		createEReference(faceEClass, FACE__VERTEX);
+		createEReference(faceEClass, FACE__VERTEX_LIST);
 
 		vertexEClass = createEClass(VERTEX);
 		createEAttribute(vertexEClass, VERTEX__POS_X);
@@ -385,6 +475,18 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 		treeEClass = createEClass(TREE);
 
 		houseEClass = createEClass(HOUSE);
+
+		gridEClass = createEClass(GRID);
+		createEAttribute(gridEClass, GRID__ID);
+		createEReference(gridEClass, GRID__COLUMN);
+
+		columnEClass = createEClass(COLUMN);
+		createEAttribute(columnEClass, COLUMN__ID);
+		createEReference(columnEClass, COLUMN__FORM);
+
+		worldEClass = createEClass(WORLD);
+		createEReference(worldEClass, WORLD__GRID);
+		createEAttribute(worldEClass, WORLD__ID);
 	}
 
 	/**
@@ -410,9 +512,6 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 		setNsPrefix(eNS_PREFIX);
 		setNsURI(eNS_URI);
 
-		// Obtain other dependent packages
-		XMLTypePackage theXMLTypePackage = (XMLTypePackage)EPackage.Registry.INSTANCE.getEPackage(XMLTypePackage.eNS_URI);
-
 		// Create type parameters
 
 		// Set bounds for type parameters
@@ -424,32 +523,43 @@ public class Constructor3DPackageImpl extends EPackageImpl implements Constructo
 
 		// Initialize classes, features, and operations; add parameters
 		initEClass(canvasEClass, Canvas.class, "Canvas", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCanvas_Form(), this.getForm(), this.getForm_Canvas(), "form", null, 0, -1, Canvas.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCanvas_Id(), theXMLTypePackage.getInt(), "id", null, 0, 1, Canvas.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCanvas_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Canvas.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCanvas_Name(), ecorePackage.getEString(), "name", null, 0, 1, Canvas.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCanvas_World(), this.getWorld(), null, "world", null, 0, 1, Canvas.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(formEClass, Form.class, "Form", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getForm_Face(), this.getFace(), this.getFace_Form(), "face", null, 0, -1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getForm_Canvas(), this.getCanvas(), this.getCanvas_Form(), "canvas", null, 1, 1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getForm_Id(), theXMLTypePackage.getInt(), "id", null, 0, 1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getForm_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getForm_Name(), ecorePackage.getEString(), "name", null, 0, 1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getForm_Vertex(), this.getVertex(), null, "vertex", null, 0, -1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getForm_Face(), this.getFace(), null, "face", null, 0, -1, Form.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(faceEClass, Face.class, "Face", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getFace_Form(), this.getForm(), this.getForm_Face(), "form", null, 1, 1, Face.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getFace_Id(), theXMLTypePackage.getInt(), "id", null, 0, 1, Face.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getFace_Vertex(), this.getVertex(), null, "vertex", null, 3, 3, Face.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFace_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Face.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getFace_VertexList(), this.getVertex(), null, "vertexList", null, 0, 3, Face.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(vertexEClass, Vertex.class, "Vertex", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getVertex_PosX(), theXMLTypePackage.getFloat(), "posX", null, 0, 1, Vertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVertex_PosY(), theXMLTypePackage.getFloat(), "posY", null, 0, 1, Vertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVertex_PosZ(), theXMLTypePackage.getFloat(), "posZ", null, 0, 1, Vertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getVertex_Id(), theXMLTypePackage.getInt(), "id", null, 0, 1, Vertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVertex_PosX(), ecorePackage.getEFloat(), "posX", null, 0, 1, Vertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVertex_PosY(), ecorePackage.getEFloat(), "posY", null, 0, 1, Vertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVertex_PosZ(), ecorePackage.getEFloat(), "posZ", null, 0, 1, Vertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getVertex_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Vertex.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(cubeEClass, Cube.class, "Cube", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(treeEClass, Tree.class, "Tree", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(houseEClass, House.class, "House", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(gridEClass, Grid.class, "Grid", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getGrid_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Grid.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGrid_Column(), this.getColumn(), null, "column", null, 0, -1, Grid.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(columnEClass, Column.class, "Column", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getColumn_Id(), ecorePackage.getEInt(), "id", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getColumn_Form(), this.getForm(), null, "form", null, 0, 1, Column.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(worldEClass, World.class, "World", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getWorld_Grid(), this.getGrid(), null, "grid", null, 0, -1, World.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getWorld_Id(), ecorePackage.getEInt(), "id", null, 0, 1, World.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

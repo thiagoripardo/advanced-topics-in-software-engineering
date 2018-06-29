@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constructor3D:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:constructor3D="http://www.example.org/constructor3D" id="1" name="Canvas">
+  <form xsi:type="constructor3D:Cube" id="1" name="Cube">
+    <vertex posX="1.0" posY="-1.0" posZ="-1.0" id="1"/>
+    <vertex posX="1.0" posY="-1.0" posZ="1.0" id="2"/>
+    <vertex posX="-1.0" posY="-1.0" posZ="1.0" id="3"/>
+    <vertex posX="-1.0" posY="-1.0" posZ="-1.0" id="4"/>
+    <vertex posX="1.0" posY="1.0" posZ="-1.0" id="5"/>
+    <vertex posX="1.0" posY="1.0" posZ="1.0" id="6"/>
+    <vertex posX="-1.0" posY="1.0" posZ="1.0" id="7"/>
+    <vertex posX="-1.0" posY="1.0" posZ="-1.0" id="8"/>
+    <face id="1" vertexList="//@form.0/@vertex.1 //@form.0/@vertex.3 //@form.0/@vertex.0"/>
+    <face id="2" vertexList="//@form.0/@vertex.7 //@form.0/@vertex.5 //@form.0/@vertex.4"/>
+    <face id="3" vertexList="//@form.0/@vertex.4 //@form.0/@vertex.1 //@form.0/@vertex.0"/>
+    <face id="4" vertexList="//@form.0/@vertex.5 //@form.0/@vertex.2 //@form.0/@vertex.1"/>
+    <face id="5" vertexList="//@form.0/@vertex.2 //@form.0/@vertex.7 //@form.0/@vertex.3"/>
+    <face id="6" vertexList="//@form.0/@vertex.0 //@form.0/@vertex.7 //@form.0/@vertex.4"/>
+    <face id="7" vertexList="//@form.0/@vertex.1 //@form.0/@vertex.2 //@form.0/@vertex.3"/>
+    <face id="8" vertexList="//@form.0/@vertex.7 //@form.0/@vertex.6 //@form.0/@vertex.5"/>
+    <face id="9" vertexList="//@form.0/@vertex.4 //@form.0/@vertex.5 //@form.0/@vertex.1"/>
+    <face id="10" vertexList="//@form.0/@vertex.5 //@form.0/@vertex.6 //@form.0/@vertex.2"/>
+    <face id="11" vertexList="//@form.0/@vertex.2 //@form.0/@vertex.6 //@form.0/@vertex.7"/>
+    <face id="12" vertexList="//@form.0/@vertex.0 //@form.0/@vertex.3 //@form.0/@vertex.7"/>
+  </form>
+  <form xsi:type="constructor3D:Cube" id="2" name="Cube_2">
+    <vertex posX="1.0" posY="-1.0" posZ="-1.0" id="9"/>
+    <vertex posX="1.0" posY="-1.0" posZ="1.0" id="10"/>
+    <vertex posX="-1.0" posY="-1.0" posZ="1.0" id="11"/>
+    <vertex posX="-1.0" posY="-1.0" posZ="-1.0" id="12"/>
+    <vertex posX="1.0" posY="1.0" posZ="-1.0" id="13"/>
+    <vertex posX="1.0" posY="1.0" posZ="1.0" id="14"/>
+    <vertex posX="-1.0" posY="1.0" posZ="1.0" id="15"/>
+    <vertex posX="-1.0" posY="1.0" posZ="-1.0" id="16"/>
+    <face id="1" vertexList="//@form.1/@vertex.1 //@form.1/@vertex.3 //@form.1/@vertex.0"/>
+    <face id="2" vertexList="//@form.1/@vertex.7 //@form.1/@vertex.5 //@form.1/@vertex.4"/>
+    <face id="3" vertexList="//@form.1/@vertex.4 //@form.1/@vertex.1 //@form.1/@vertex.0"/>
+    <face id="4" vertexList="//@form.1/@vertex.5 //@form.1/@vertex.2 //@form.1/@vertex.1"/>
+    <face id="5" vertexList="//@form.1/@vertex.2 //@form.1/@vertex.7 //@form.1/@vertex.3"/>
+    <face id="6" vertexList="//@form.1/@vertex.0 //@form.1/@vertex.7 //@form.1/@vertex.4"/>
+    <face id="7" vertexList="//@form.1/@vertex.1 //@form.1/@vertex.2 //@form.1/@vertex.3"/>
+    <face id="8" vertexList="//@form.1/@vertex.7 //@form.1/@vertex.6 //@form.1/@vertex.5"/>
+    <face id="9" vertexList="//@form.1/@vertex.4 //@form.1/@vertex.5 //@form.1/@vertex.1"/>
+    <face id="10" vertexList="//@form.1/@vertex.5 //@form.1/@vertex.6 //@form.1/@vertex.2"/>
+    <face id="11" vertexList="//@form.1/@vertex.2 //@form.1/@vertex.6 //@form.1/@vertex.7"/>
+    <face id="12" vertexList="//@form.1/@vertex.0 //@form.1/@vertex.3 //@form.1/@vertex.7"/>
+  </form>
+</constructor3D:Canvas>

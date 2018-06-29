@@ -15,9 +15,8 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link constructor3D.Face#getForm <em>Form</em>}</li>
  *   <li>{@link constructor3D.Face#getId <em>Id</em>}</li>
- *   <li>{@link constructor3D.Face#getVertex <em>Vertex</em>}</li>
+ *   <li>{@link constructor3D.Face#getVertexList <em>Vertex List</em>}</li>
  * </ul>
  *
  * @see constructor3D.Constructor3DPackage#getFace()
@@ -25,34 +24,6 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Face extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Form</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link constructor3D.Form#getFace <em>Face</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Form</em>' container reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Form</em>' container reference.
-	 * @see #setForm(Form)
-	 * @see constructor3D.Constructor3DPackage#getFace_Form()
-	 * @see constructor3D.Form#getFace
-	 * @model opposite="face" required="true" transient="false"
-	 * @generated
-	 */
-	Form getForm();
-
-	/**
-	 * Sets the value of the '{@link constructor3D.Face#getForm <em>Form</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Form</em>' container reference.
-	 * @see #getForm()
-	 * @generated
-	 */
-	void setForm(Form value);
-
 	/**
 	 * Returns the value of the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -64,7 +35,7 @@ public interface Face extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(int)
 	 * @see constructor3D.Constructor3DPackage#getFace_Id()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+	 * @model
 	 * @generated
 	 */
 	int getId();
@@ -80,19 +51,19 @@ public interface Face extends EObject {
 	void setId(int value);
 
 	/**
-	 * Returns the value of the '<em><b>Vertex</b></em>' reference list.
+	 * Returns the value of the '<em><b>Vertex List</b></em>' reference list.
 	 * The list contents are of type {@link constructor3D.Vertex}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Vertex</em>' reference list isn't clear,
+	 * If the meaning of the '<em>Vertex List</em>' reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Vertex</em>' reference list.
-	 * @see constructor3D.Constructor3DPackage#getFace_Vertex()
-	 * @model lower="3" upper="3"
+	 * @return the value of the '<em>Vertex List</em>' reference list.
+	 * @see constructor3D.Constructor3DPackage#getFace_VertexList()
+	 * @model upper="3"
 	 * @generated
 	 */
-	EList<Vertex> getVertex();
+	EList<Vertex> getVertexList();
 
 } // Face

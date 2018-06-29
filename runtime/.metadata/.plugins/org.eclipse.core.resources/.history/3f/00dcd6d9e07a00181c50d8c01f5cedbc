@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:constructor3D="http://www.example.org/constructor3D" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_Gs5GYFLjEeijTsUft6nIaw" selectedViews="_x-ZHUF91EeiwN8FTObzNcA" version="12.1.0.201708031200">
+    <semanticResources>My.constructor3d</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_x-ZHUF91EeiwN8FTObzNcA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_GD3QQHrfEeiEx8XhCaf_-Q" name="new canvas" repPath="#_GDuGUHrfEeiEx8XhCaf_-Q">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']"/>
+        <target xmi:type="constructor3D:Canvas" href="My.constructor3d#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_GD2CIHrfEeiEx8XhCaf_-Q" name="new canvas" uid="_GDuGUHrfEeiEx8XhCaf_-Q">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_GD2CIXrfEeiEx8XhCaf_-Q" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_GD2CInrfEeiEx8XhCaf_-Q"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_GEGg0HrfEeiEx8XhCaf_-Q" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_GEGg0XrfEeiEx8XhCaf_-Q" type="Sirius" element="_GD2CIHrfEeiEx8XhCaf_-Q" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_wyG38HrgEeiEx8XhCaf_-Q" type="2002" element="_wyDNkHrgEeiEx8XhCaf_-Q">
+          <children xmi:type="notation:Node" xmi:id="_wyHfAHrgEeiEx8XhCaf_-Q" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_wyHfAXrgEeiEx8XhCaf_-Q" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_xDm3oHrgEeiEx8XhCaf_-Q" type="3008" element="_xDkbYHrgEeiEx8XhCaf_-Q">
+              <children xmi:type="notation:Node" xmi:id="_xDnesHrgEeiEx8XhCaf_-Q" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_xDnesXrgEeiEx8XhCaf_-Q" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_xDnesnrgEeiEx8XhCaf_-Q"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_xDnes3rgEeiEx8XhCaf_-Q"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_xDnetHrgEeiEx8XhCaf_-Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_xDm3oXrgEeiEx8XhCaf_-Q" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xDm3onrgEeiEx8XhCaf_-Q"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_xexJoHrgEeiEx8XhCaf_-Q" type="3008" element="_xetfQHrgEeiEx8XhCaf_-Q">
+              <children xmi:type="notation:Node" xmi:id="_xexJo3rgEeiEx8XhCaf_-Q" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_xexJpHrgEeiEx8XhCaf_-Q" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_xexJpXrgEeiEx8XhCaf_-Q"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_xexJpnrgEeiEx8XhCaf_-Q"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_xexwsHrgEeiEx8XhCaf_-Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_xexJoXrgEeiEx8XhCaf_-Q" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xexJonrgEeiEx8XhCaf_-Q" y="40"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_xodRIHrgEeiEx8XhCaf_-Q" type="3008" element="_xoXxkHrgEeiEx8XhCaf_-Q">
+              <children xmi:type="notation:Node" xmi:id="_xod4MHrgEeiEx8XhCaf_-Q" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_xod4MXrgEeiEx8XhCaf_-Q" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_x4uhwHrgEeiEx8XhCaf_-Q" type="3008" element="_x4ppQHrgEeiEx8XhCaf_-Q">
+                  <children xmi:type="notation:Node" xmi:id="_x4vI0HrgEeiEx8XhCaf_-Q" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_x4vI0XrgEeiEx8XhCaf_-Q" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_x4vI0nrgEeiEx8XhCaf_-Q"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_x4vI03rgEeiEx8XhCaf_-Q"/>
+                    <styles xmi:type="notation:DrawerStyle" xmi:id="_x4vI1HrgEeiEx8XhCaf_-Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_x4uhwXrgEeiEx8XhCaf_-Q" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x4uhwnrgEeiEx8XhCaf_-Q"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_yGzaAHrgEeiEx8XhCaf_-Q" type="3008" element="_yGtTYHrgEeiEx8XhCaf_-Q">
+                  <children xmi:type="notation:Node" xmi:id="_yGzaA3rgEeiEx8XhCaf_-Q" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_yGzaBHrgEeiEx8XhCaf_-Q" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_yG0BEHrgEeiEx8XhCaf_-Q"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_yG0BEXrgEeiEx8XhCaf_-Q"/>
+                    <styles xmi:type="notation:DrawerStyle" xmi:id="_yG0BEnrgEeiEx8XhCaf_-Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_yGzaAXrgEeiEx8XhCaf_-Q" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yGzaAnrgEeiEx8XhCaf_-Q" x="40"/>
+                </children>
+                <children xmi:type="notation:Node" xmi:id="_yjv0sHrgEeiEx8XhCaf_-Q" type="3008" element="_yjsKUHrgEeiEx8XhCaf_-Q">
+                  <children xmi:type="notation:Node" xmi:id="_yjv0s3rgEeiEx8XhCaf_-Q" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_yjv0tHrgEeiEx8XhCaf_-Q" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_yjv0tXrgEeiEx8XhCaf_-Q"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_yjv0tnrgEeiEx8XhCaf_-Q"/>
+                    <styles xmi:type="notation:DrawerStyle" xmi:id="_yjv0t3rgEeiEx8XhCaf_-Q"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_yjv0sXrgEeiEx8XhCaf_-Q" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yjv0snrgEeiEx8XhCaf_-Q" x="80"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_xod4MnrgEeiEx8XhCaf_-Q"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_xod4M3rgEeiEx8XhCaf_-Q"/>
+                <styles xmi:type="notation:DrawerStyle" xmi:id="_xod4NHrgEeiEx8XhCaf_-Q"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_xodRIXrgEeiEx8XhCaf_-Q" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_xodRInrgEeiEx8XhCaf_-Q" y="80"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_wyHfAnrgEeiEx8XhCaf_-Q"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_wyHfA3rgEeiEx8XhCaf_-Q"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_wyG38XrgEeiEx8XhCaf_-Q" fontName="Ubuntu" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wyG38nrgEeiEx8XhCaf_-Q" x="265" y="75"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_GEGg0nrfEeiEx8XhCaf_-Q"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_wyDNkHrgEeiEx8XhCaf_-Q" name="0" childrenPresentation="VerticalStack">
+      <target xmi:type="constructor3D:World" href="My.constructor3d#//@world"/>
+      <semanticElements xmi:type="constructor3D:World" href="My.constructor3d#//@world"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_wyD0oHrgEeiEx8XhCaf_-Q" borderSize="1" borderSizeComputationExpression="1" foregroundColor="39,76,114">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_xDkbYHrgEeiEx8XhCaf_-Q" name="0" childrenPresentation="HorizontalStack">
+        <target xmi:type="constructor3D:Grid" href="My.constructor3d#//@world/@grid.0"/>
+        <semanticElements xmi:type="constructor3D:Grid" href="My.constructor3d#//@world/@grid.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_xDkbYXrgEeiEx8XhCaf_-Q" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_xetfQHrgEeiEx8XhCaf_-Q" name="1" childrenPresentation="HorizontalStack">
+        <target xmi:type="constructor3D:Grid" href="My.constructor3d#//@world/@grid.1"/>
+        <semanticElements xmi:type="constructor3D:Grid" href="My.constructor3d#//@world/@grid.1"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_xetfQXrgEeiEx8XhCaf_-Q" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_xoXxkHrgEeiEx8XhCaf_-Q" name="2" childrenPresentation="HorizontalStack">
+        <target xmi:type="constructor3D:Grid" href="My.constructor3d#//@world/@grid.2"/>
+        <semanticElements xmi:type="constructor3D:Grid" href="My.constructor3d#//@world/@grid.2"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_xoYYoHrgEeiEx8XhCaf_-Q" borderSize="1" borderSizeComputationExpression="1" foregroundColor="255,245,181">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_x4ppQHrgEeiEx8XhCaf_-Q" name="0" childrenPresentation="VerticalStack">
+          <target xmi:type="constructor3D:Column" href="My.constructor3d#//@world/@grid.2/@column.0"/>
+          <semanticElements xmi:type="constructor3D:Column" href="My.constructor3d#//@world/@grid.2/@column.0"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_x4qQUHrgEeiEx8XhCaf_-Q" borderSize="1" borderSizeComputationExpression="1">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_yGtTYHrgEeiEx8XhCaf_-Q" name="1" childrenPresentation="VerticalStack">
+          <target xmi:type="constructor3D:Column" href="My.constructor3d#//@world/@grid.2/@column.1"/>
+          <semanticElements xmi:type="constructor3D:Column" href="My.constructor3d#//@world/@grid.2/@column.1"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_yGtTYXrgEeiEx8XhCaf_-Q" borderSize="1" borderSizeComputationExpression="1">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']"/>
+        </ownedDiagramElements>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_yjsKUHrgEeiEx8XhCaf_-Q" name="2" childrenPresentation="VerticalStack">
+          <target xmi:type="constructor3D:Column" href="My.constructor3d#//@world/@grid.2/@column.2"/>
+          <semanticElements xmi:type="constructor3D:Column" href="My.constructor3d#//@world/@grid.2/@column.2"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_yjsKUXrgEeiEx8XhCaf_-Q" borderSize="1" borderSizeComputationExpression="1">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer/@containerMappings[name='world']/@subContainerMappings[name='grid']/@subContainerMappings[name='column']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_GD2CJHrfEeiEx8XhCaf_-Q"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/cons3D.project.design/description/project.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='canvas']/@defaultLayer"/>
+    <target xmi:type="constructor3D:Canvas" href="My.constructor3d#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

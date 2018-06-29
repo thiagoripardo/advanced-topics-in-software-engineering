@@ -2,8 +2,6 @@
  */
 package constructor3D;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,9 +13,9 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link constructor3D.Canvas#getForm <em>Form</em>}</li>
  *   <li>{@link constructor3D.Canvas#getId <em>Id</em>}</li>
  *   <li>{@link constructor3D.Canvas#getName <em>Name</em>}</li>
+ *   <li>{@link constructor3D.Canvas#getWorld <em>World</em>}</li>
  * </ul>
  *
  * @see constructor3D.Constructor3DPackage#getCanvas()
@@ -25,24 +23,6 @@ import org.eclipse.emf.ecore.EObject;
  * @generated
  */
 public interface Canvas extends EObject {
-	/**
-	 * Returns the value of the '<em><b>Form</b></em>' containment reference list.
-	 * The list contents are of type {@link constructor3D.Form}.
-	 * It is bidirectional and its opposite is '{@link constructor3D.Form#getCanvas <em>Canvas</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Form</em>' containment reference list isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Form</em>' containment reference list.
-	 * @see constructor3D.Constructor3DPackage#getCanvas_Form()
-	 * @see constructor3D.Form#getCanvas
-	 * @model opposite="canvas" containment="true"
-	 * @generated
-	 */
-	EList<Form> getForm();
-
 	/**
 	 * Returns the value of the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -54,7 +34,7 @@ public interface Canvas extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(int)
 	 * @see constructor3D.Constructor3DPackage#getCanvas_Id()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+	 * @model
 	 * @generated
 	 */
 	int getId();
@@ -94,5 +74,31 @@ public interface Canvas extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>World</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>World</em>' containment reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>World</em>' containment reference.
+	 * @see #setWorld(World)
+	 * @see constructor3D.Constructor3DPackage#getCanvas_World()
+	 * @model containment="true"
+	 * @generated
+	 */
+	World getWorld();
+
+	/**
+	 * Sets the value of the '{@link constructor3D.Canvas#getWorld <em>World</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>World</em>' containment reference.
+	 * @see #getWorld()
+	 * @generated
+	 */
+	void setWorld(World value);
 
 } // Canvas

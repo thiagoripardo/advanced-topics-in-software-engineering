@@ -67,22 +67,13 @@ public interface Constructor3DPackage extends EPackage {
 	int CANVAS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Form</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CANVAS__FORM = 0;
-
-	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CANVAS__ID = 1;
+	int CANVAS__ID = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -91,7 +82,16 @@ public interface Constructor3DPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CANVAS__NAME = 2;
+	int CANVAS__NAME = 1;
+
+	/**
+	 * The feature id for the '<em><b>World</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CANVAS__WORLD = 2;
 
 	/**
 	 * The number of structural features of the '<em>Canvas</em>' class.
@@ -122,31 +122,13 @@ public interface Constructor3DPackage extends EPackage {
 	int FORM = 1;
 
 	/**
-	 * The feature id for the '<em><b>Face</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM__FACE = 0;
-
-	/**
-	 * The feature id for the '<em><b>Canvas</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FORM__CANVAS = 1;
-
-	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FORM__ID = 2;
+	int FORM__ID = 0;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -155,7 +137,25 @@ public interface Constructor3DPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FORM__NAME = 3;
+	int FORM__NAME = 1;
+
+	/**
+	 * The feature id for the '<em><b>Vertex</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM__VERTEX = 2;
+
+	/**
+	 * The feature id for the '<em><b>Face</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FORM__FACE = 3;
 
 	/**
 	 * The number of structural features of the '<em>Form</em>' class.
@@ -186,31 +186,22 @@ public interface Constructor3DPackage extends EPackage {
 	int FACE = 2;
 
 	/**
-	 * The feature id for the '<em><b>Form</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int FACE__FORM = 0;
-
-	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACE__ID = 1;
+	int FACE__ID = 0;
 
 	/**
-	 * The feature id for the '<em><b>Vertex</b></em>' reference list.
+	 * The feature id for the '<em><b>Vertex List</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACE__VERTEX = 2;
+	int FACE__VERTEX_LIST = 1;
 
 	/**
 	 * The number of structural features of the '<em>Face</em>' class.
@@ -219,7 +210,7 @@ public interface Constructor3DPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACE_FEATURE_COUNT = 3;
+	int FACE_FEATURE_COUNT = 2;
 
 	/**
 	 * The number of operations of the '<em>Face</em>' class.
@@ -305,24 +296,6 @@ public interface Constructor3DPackage extends EPackage {
 	int CUBE = 4;
 
 	/**
-	 * The feature id for the '<em><b>Face</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUBE__FACE = FORM__FACE;
-
-	/**
-	 * The feature id for the '<em><b>Canvas</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CUBE__CANVAS = FORM__CANVAS;
-
-	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -339,6 +312,24 @@ public interface Constructor3DPackage extends EPackage {
 	 * @ordered
 	 */
 	int CUBE__NAME = FORM__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Vertex</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUBE__VERTEX = FORM__VERTEX;
+
+	/**
+	 * The feature id for the '<em><b>Face</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CUBE__FACE = FORM__FACE;
 
 	/**
 	 * The number of structural features of the '<em>Cube</em>' class.
@@ -369,24 +360,6 @@ public interface Constructor3DPackage extends EPackage {
 	int TREE = 5;
 
 	/**
-	 * The feature id for the '<em><b>Face</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE__FACE = FORM__FACE;
-
-	/**
-	 * The feature id for the '<em><b>Canvas</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int TREE__CANVAS = FORM__CANVAS;
-
-	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -403,6 +376,24 @@ public interface Constructor3DPackage extends EPackage {
 	 * @ordered
 	 */
 	int TREE__NAME = FORM__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Vertex</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TREE__VERTEX = FORM__VERTEX;
+
+	/**
+	 * The feature id for the '<em><b>Face</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TREE__FACE = FORM__FACE;
 
 	/**
 	 * The number of structural features of the '<em>Tree</em>' class.
@@ -433,24 +424,6 @@ public interface Constructor3DPackage extends EPackage {
 	int HOUSE = 6;
 
 	/**
-	 * The feature id for the '<em><b>Face</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOUSE__FACE = FORM__FACE;
-
-	/**
-	 * The feature id for the '<em><b>Canvas</b></em>' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int HOUSE__CANVAS = FORM__CANVAS;
-
-	/**
 	 * The feature id for the '<em><b>Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -467,6 +440,24 @@ public interface Constructor3DPackage extends EPackage {
 	 * @ordered
 	 */
 	int HOUSE__NAME = FORM__NAME;
+
+	/**
+	 * The feature id for the '<em><b>Vertex</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOUSE__VERTEX = FORM__VERTEX;
+
+	/**
+	 * The feature id for the '<em><b>Face</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int HOUSE__FACE = FORM__FACE;
 
 	/**
 	 * The number of structural features of the '<em>House</em>' class.
@@ -488,6 +479,146 @@ public interface Constructor3DPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link constructor3D.impl.GridImpl <em>Grid</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see constructor3D.impl.GridImpl
+	 * @see constructor3D.impl.Constructor3DPackageImpl#getGrid()
+	 * @generated
+	 */
+	int GRID = 7;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRID__ID = 0;
+
+	/**
+	 * The feature id for the '<em><b>Column</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRID__COLUMN = 1;
+
+	/**
+	 * The number of structural features of the '<em>Grid</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRID_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Grid</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GRID_OPERATION_COUNT = 0;
+
+	/**
+	 * The meta object id for the '{@link constructor3D.impl.ColumnImpl <em>Column</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see constructor3D.impl.ColumnImpl
+	 * @see constructor3D.impl.Constructor3DPackageImpl#getColumn()
+	 * @generated
+	 */
+	int COLUMN = 8;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__ID = 0;
+
+	/**
+	 * The feature id for the '<em><b>Form</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN__FORM = 1;
+
+	/**
+	 * The number of structural features of the '<em>Column</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>Column</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int COLUMN_OPERATION_COUNT = 0;
+
+
+	/**
+	 * The meta object id for the '{@link constructor3D.impl.WorldImpl <em>World</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see constructor3D.impl.WorldImpl
+	 * @see constructor3D.impl.Constructor3DPackageImpl#getWorld()
+	 * @generated
+	 */
+	int WORLD = 9;
+
+	/**
+	 * The feature id for the '<em><b>Grid</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORLD__GRID = 0;
+
+	/**
+	 * The feature id for the '<em><b>Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORLD__ID = 1;
+
+	/**
+	 * The number of structural features of the '<em>World</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORLD_FEATURE_COUNT = 2;
+
+	/**
+	 * The number of operations of the '<em>World</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORLD_OPERATION_COUNT = 0;
+
+
+	/**
 	 * Returns the meta object for class '{@link constructor3D.Canvas <em>Canvas</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -496,17 +627,6 @@ public interface Constructor3DPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getCanvas();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link constructor3D.Canvas#getForm <em>Form</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Form</em>'.
-	 * @see constructor3D.Canvas#getForm()
-	 * @see #getCanvas()
-	 * @generated
-	 */
-	EReference getCanvas_Form();
 
 	/**
 	 * Returns the meta object for the attribute '{@link constructor3D.Canvas#getId <em>Id</em>}'.
@@ -531,6 +651,17 @@ public interface Constructor3DPackage extends EPackage {
 	EAttribute getCanvas_Name();
 
 	/**
+	 * Returns the meta object for the containment reference '{@link constructor3D.Canvas#getWorld <em>World</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>World</em>'.
+	 * @see constructor3D.Canvas#getWorld()
+	 * @see #getCanvas()
+	 * @generated
+	 */
+	EReference getCanvas_World();
+
+	/**
 	 * Returns the meta object for class '{@link constructor3D.Form <em>Form</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -550,17 +681,6 @@ public interface Constructor3DPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getForm_Face();
-
-	/**
-	 * Returns the meta object for the container reference '{@link constructor3D.Form#getCanvas <em>Canvas</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the container reference '<em>Canvas</em>'.
-	 * @see constructor3D.Form#getCanvas()
-	 * @see #getForm()
-	 * @generated
-	 */
-	EReference getForm_Canvas();
 
 	/**
 	 * Returns the meta object for the attribute '{@link constructor3D.Form#getId <em>Id</em>}'.
@@ -585,6 +705,17 @@ public interface Constructor3DPackage extends EPackage {
 	EAttribute getForm_Name();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link constructor3D.Form#getVertex <em>Vertex</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Vertex</em>'.
+	 * @see constructor3D.Form#getVertex()
+	 * @see #getForm()
+	 * @generated
+	 */
+	EReference getForm_Vertex();
+
+	/**
 	 * Returns the meta object for class '{@link constructor3D.Face <em>Face</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -593,17 +724,6 @@ public interface Constructor3DPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getFace();
-
-	/**
-	 * Returns the meta object for the container reference '{@link constructor3D.Face#getForm <em>Form</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the container reference '<em>Form</em>'.
-	 * @see constructor3D.Face#getForm()
-	 * @see #getFace()
-	 * @generated
-	 */
-	EReference getFace_Form();
 
 	/**
 	 * Returns the meta object for the attribute '{@link constructor3D.Face#getId <em>Id</em>}'.
@@ -617,15 +737,15 @@ public interface Constructor3DPackage extends EPackage {
 	EAttribute getFace_Id();
 
 	/**
-	 * Returns the meta object for the reference list '{@link constructor3D.Face#getVertex <em>Vertex</em>}'.
+	 * Returns the meta object for the reference list '{@link constructor3D.Face#getVertexList <em>Vertex List</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Vertex</em>'.
-	 * @see constructor3D.Face#getVertex()
+	 * @return the meta object for the reference list '<em>Vertex List</em>'.
+	 * @see constructor3D.Face#getVertexList()
 	 * @see #getFace()
 	 * @generated
 	 */
-	EReference getFace_Vertex();
+	EReference getFace_VertexList();
 
 	/**
 	 * Returns the meta object for class '{@link constructor3D.Vertex <em>Vertex</em>}'.
@@ -712,6 +832,102 @@ public interface Constructor3DPackage extends EPackage {
 	EClass getHouse();
 
 	/**
+	 * Returns the meta object for class '{@link constructor3D.Grid <em>Grid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Grid</em>'.
+	 * @see constructor3D.Grid
+	 * @generated
+	 */
+	EClass getGrid();
+
+	/**
+	 * Returns the meta object for the attribute '{@link constructor3D.Grid#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see constructor3D.Grid#getId()
+	 * @see #getGrid()
+	 * @generated
+	 */
+	EAttribute getGrid_Id();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link constructor3D.Grid#getColumn <em>Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Column</em>'.
+	 * @see constructor3D.Grid#getColumn()
+	 * @see #getGrid()
+	 * @generated
+	 */
+	EReference getGrid_Column();
+
+	/**
+	 * Returns the meta object for class '{@link constructor3D.Column <em>Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Column</em>'.
+	 * @see constructor3D.Column
+	 * @generated
+	 */
+	EClass getColumn();
+
+	/**
+	 * Returns the meta object for the attribute '{@link constructor3D.Column#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see constructor3D.Column#getId()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EAttribute getColumn_Id();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link constructor3D.Column#getForm <em>Form</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Form</em>'.
+	 * @see constructor3D.Column#getForm()
+	 * @see #getColumn()
+	 * @generated
+	 */
+	EReference getColumn_Form();
+
+	/**
+	 * Returns the meta object for class '{@link constructor3D.World <em>World</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>World</em>'.
+	 * @see constructor3D.World
+	 * @generated
+	 */
+	EClass getWorld();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link constructor3D.World#getGrid <em>Grid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Grid</em>'.
+	 * @see constructor3D.World#getGrid()
+	 * @see #getWorld()
+	 * @generated
+	 */
+	EReference getWorld_Grid();
+
+	/**
+	 * Returns the meta object for the attribute '{@link constructor3D.World#getId <em>Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Id</em>'.
+	 * @see constructor3D.World#getId()
+	 * @see #getWorld()
+	 * @generated
+	 */
+	EAttribute getWorld_Id();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -745,14 +961,6 @@ public interface Constructor3DPackage extends EPackage {
 		EClass CANVAS = eINSTANCE.getCanvas();
 
 		/**
-		 * The meta object literal for the '<em><b>Form</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CANVAS__FORM = eINSTANCE.getCanvas_Form();
-
-		/**
 		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -767,6 +975,14 @@ public interface Constructor3DPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CANVAS__NAME = eINSTANCE.getCanvas_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>World</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CANVAS__WORLD = eINSTANCE.getCanvas_World();
 
 		/**
 		 * The meta object literal for the '{@link constructor3D.impl.FormImpl <em>Form</em>}' class.
@@ -787,14 +1003,6 @@ public interface Constructor3DPackage extends EPackage {
 		EReference FORM__FACE = eINSTANCE.getForm_Face();
 
 		/**
-		 * The meta object literal for the '<em><b>Canvas</b></em>' container reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FORM__CANVAS = eINSTANCE.getForm_Canvas();
-
-		/**
 		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -811,6 +1019,14 @@ public interface Constructor3DPackage extends EPackage {
 		EAttribute FORM__NAME = eINSTANCE.getForm_Name();
 
 		/**
+		 * The meta object literal for the '<em><b>Vertex</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FORM__VERTEX = eINSTANCE.getForm_Vertex();
+
+		/**
 		 * The meta object literal for the '{@link constructor3D.impl.FaceImpl <em>Face</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -821,14 +1037,6 @@ public interface Constructor3DPackage extends EPackage {
 		EClass FACE = eINSTANCE.getFace();
 
 		/**
-		 * The meta object literal for the '<em><b>Form</b></em>' container reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference FACE__FORM = eINSTANCE.getFace_Form();
-
-		/**
 		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -837,12 +1045,12 @@ public interface Constructor3DPackage extends EPackage {
 		EAttribute FACE__ID = eINSTANCE.getFace_Id();
 
 		/**
-		 * The meta object literal for the '<em><b>Vertex</b></em>' reference list feature.
+		 * The meta object literal for the '<em><b>Vertex List</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference FACE__VERTEX = eINSTANCE.getFace_Vertex();
+		EReference FACE__VERTEX_LIST = eINSTANCE.getFace_VertexList();
 
 		/**
 		 * The meta object literal for the '{@link constructor3D.impl.VertexImpl <em>Vertex</em>}' class.
@@ -915,6 +1123,84 @@ public interface Constructor3DPackage extends EPackage {
 		 * @generated
 		 */
 		EClass HOUSE = eINSTANCE.getHouse();
+
+		/**
+		 * The meta object literal for the '{@link constructor3D.impl.GridImpl <em>Grid</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see constructor3D.impl.GridImpl
+		 * @see constructor3D.impl.Constructor3DPackageImpl#getGrid()
+		 * @generated
+		 */
+		EClass GRID = eINSTANCE.getGrid();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute GRID__ID = eINSTANCE.getGrid_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Column</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GRID__COLUMN = eINSTANCE.getGrid_Column();
+
+		/**
+		 * The meta object literal for the '{@link constructor3D.impl.ColumnImpl <em>Column</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see constructor3D.impl.ColumnImpl
+		 * @see constructor3D.impl.Constructor3DPackageImpl#getColumn()
+		 * @generated
+		 */
+		EClass COLUMN = eINSTANCE.getColumn();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute COLUMN__ID = eINSTANCE.getColumn_Id();
+
+		/**
+		 * The meta object literal for the '<em><b>Form</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference COLUMN__FORM = eINSTANCE.getColumn_Form();
+
+		/**
+		 * The meta object literal for the '{@link constructor3D.impl.WorldImpl <em>World</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see constructor3D.impl.WorldImpl
+		 * @see constructor3D.impl.Constructor3DPackageImpl#getWorld()
+		 * @generated
+		 */
+		EClass WORLD = eINSTANCE.getWorld();
+
+		/**
+		 * The meta object literal for the '<em><b>Grid</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORLD__GRID = eINSTANCE.getWorld_Grid();
+
+		/**
+		 * The meta object literal for the '<em><b>Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute WORLD__ID = eINSTANCE.getWorld_Id();
 
 	}
 

@@ -76,6 +76,33 @@ public interface Constructor3DFactory extends EFactory {
 	House createHouse();
 
 	/**
+	 * Returns a new object of class '<em>Grid</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Grid</em>'.
+	 * @generated
+	 */
+	Grid createGrid();
+
+	/**
+	 * Returns a new object of class '<em>Column</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Column</em>'.
+	 * @generated
+	 */
+	Column createColumn();
+
+	/**
+	 * Returns a new object of class '<em>World</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>World</em>'.
+	 * @generated
+	 */
+	World createWorld();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

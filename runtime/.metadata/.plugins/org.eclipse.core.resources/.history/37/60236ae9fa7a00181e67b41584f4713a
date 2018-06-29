@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constructor3D:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:constructor3D="http://www.example.org/constructor3D" name="Canvas">
+  <world>
+    <grid>
+      <column/>
+      <column id="1"/>
+      <column id="2">
+        <form xsi:type="constructor3D:Cube" id="1" name="Cube_0_2">
+          <vertex posX="1.0" posY="-1.0" posZ="-1.0" id="1"/>
+          <vertex posX="1.0" posY="-1.0" posZ="1.0" id="2"/>
+          <vertex posX="-1.0" posY="-1.0" posZ="1.0" id="3"/>
+          <vertex posX="-1.0" posY="-1.0" posZ="-1.0" id="4"/>
+          <vertex posX="1.0" posY="1.0" posZ="-1.0" id="5"/>
+          <vertex posX="1.0" posY="1.0" posZ="1.0" id="6"/>
+          <vertex posX="-1.0" posY="1.0" posZ="1.0" id="7"/>
+          <vertex posX="-1.0" posY="1.0" posZ="-1.0" id="8"/>
+          <face id="1" vertexList="//@world/@grid.0/@column.2/@form/@vertex.1 //@world/@grid.0/@column.2/@form/@vertex.3 //@world/@grid.0/@column.2/@form/@vertex.0"/>
+          <face id="2" vertexList="//@world/@grid.0/@column.2/@form/@vertex.7 //@world/@grid.0/@column.2/@form/@vertex.5 //@world/@grid.0/@column.2/@form/@vertex.4"/>
+          <face id="3" vertexList="//@world/@grid.0/@column.2/@form/@vertex.4 //@world/@grid.0/@column.2/@form/@vertex.1 //@world/@grid.0/@column.2/@form/@vertex.0"/>
+          <face id="4" vertexList="//@world/@grid.0/@column.2/@form/@vertex.5 //@world/@grid.0/@column.2/@form/@vertex.2 //@world/@grid.0/@column.2/@form/@vertex.1"/>
+          <face id="5" vertexList="//@world/@grid.0/@column.2/@form/@vertex.2 //@world/@grid.0/@column.2/@form/@vertex.7 //@world/@grid.0/@column.2/@form/@vertex.3"/>
+          <face id="6" vertexList="//@world/@grid.0/@column.2/@form/@vertex.0 //@world/@grid.0/@column.2/@form/@vertex.7 //@world/@grid.0/@column.2/@form/@vertex.4"/>
+          <face id="7" vertexList="//@world/@grid.0/@column.2/@form/@vertex.1 //@world/@grid.0/@column.2/@form/@vertex.2 //@world/@grid.0/@column.2/@form/@vertex.3"/>
+          <face id="8" vertexList="//@world/@grid.0/@column.2/@form/@vertex.7 //@world/@grid.0/@column.2/@form/@vertex.6 //@world/@grid.0/@column.2/@form/@vertex.5"/>
+          <face id="9" vertexList="//@world/@grid.0/@column.2/@form/@vertex.4 //@world/@grid.0/@column.2/@form/@vertex.5 //@world/@grid.0/@column.2/@form/@vertex.1"/>
+          <face id="10" vertexList="//@world/@grid.0/@column.2/@form/@vertex.5 //@world/@grid.0/@column.2/@form/@vertex.6 //@world/@grid.0/@column.2/@form/@vertex.2"/>
+          <face id="11" vertexList="//@world/@grid.0/@column.2/@form/@vertex.2 //@world/@grid.0/@column.2/@form/@vertex.6 //@world/@grid.0/@column.2/@form/@vertex.7"/>
+          <face id="12" vertexList="//@world/@grid.0/@column.2/@form/@vertex.0 //@world/@grid.0/@column.2/@form/@vertex.3 //@world/@grid.0/@column.2/@form/@vertex.7"/>
+        </form>
+      </column>
+    </grid>
+    <grid id="1">
+      <column/>
+      <column id="1"/>
+      <column id="2"/>
+    </grid>
+  </world>
+</constructor3D:Canvas>

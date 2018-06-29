@@ -125,7 +125,7 @@ public class CanvasItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(Constructor3DPackage.Literals.CANVAS__FORM);
+			childrenFeatures.add(Constructor3DPackage.Literals.CANVAS__WORLD);
 		}
 		return childrenFeatures;
 	}
@@ -185,7 +185,7 @@ public class CanvasItemProvider
 			case Constructor3DPackage.CANVAS__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
-			case Constructor3DPackage.CANVAS__FORM:
+			case Constructor3DPackage.CANVAS__WORLD:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -205,18 +205,8 @@ public class CanvasItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(Constructor3DPackage.Literals.CANVAS__FORM,
-				 Constructor3DFactory.eINSTANCE.createCube()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Constructor3DPackage.Literals.CANVAS__FORM,
-				 Constructor3DFactory.eINSTANCE.createTree()));
-
-		newChildDescriptors.add
-			(createChildParameter
-				(Constructor3DPackage.Literals.CANVAS__FORM,
-				 Constructor3DFactory.eINSTANCE.createHouse()));
+				(Constructor3DPackage.Literals.CANVAS__WORLD,
+				 Constructor3DFactory.eINSTANCE.createWorld()));
 	}
 
 	/**

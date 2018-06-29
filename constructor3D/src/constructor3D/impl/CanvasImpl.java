@@ -4,23 +4,14 @@ package constructor3D.impl;
 
 import constructor3D.Canvas;
 import constructor3D.Constructor3DPackage;
-import constructor3D.Form;
-
-import java.util.Collection;
-
+import constructor3D.World;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
-
-import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
-import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,24 +21,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link constructor3D.impl.CanvasImpl#getForm <em>Form</em>}</li>
  *   <li>{@link constructor3D.impl.CanvasImpl#getId <em>Id</em>}</li>
  *   <li>{@link constructor3D.impl.CanvasImpl#getName <em>Name</em>}</li>
+ *   <li>{@link constructor3D.impl.CanvasImpl#getWorld <em>World</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
-	/**
-	 * The cached value of the '{@link #getForm() <em>Form</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getForm()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Form> form;
-
 	/**
 	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -89,6 +70,16 @@ public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
 	protected String name = NAME_EDEFAULT;
 
 	/**
+	 * The cached value of the '{@link #getWorld() <em>World</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getWorld()
+	 * @generated
+	 * @ordered
+	 */
+	protected World world;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -105,18 +96,6 @@ public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
 	@Override
 	protected EClass eStaticClass() {
 		return Constructor3DPackage.Literals.CANVAS;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EList<Form> getForm() {
-		if (form == null) {
-			form = new EObjectContainmentWithInverseEList<Form>(Form.class, this, Constructor3DPackage.CANVAS__FORM, Constructor3DPackage.FORM__CANVAS);
-		}
-		return form;
 	}
 
 	/**
@@ -166,14 +145,42 @@ public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case Constructor3DPackage.CANVAS__FORM:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getForm()).basicAdd(otherEnd, msgs);
+	public World getWorld() {
+		return world;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public NotificationChain basicSetWorld(World newWorld, NotificationChain msgs) {
+		World oldWorld = world;
+		world = newWorld;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, Constructor3DPackage.CANVAS__WORLD, oldWorld, newWorld);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
+		return msgs;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setWorld(World newWorld) {
+		if (newWorld != world) {
+			NotificationChain msgs = null;
+			if (world != null)
+				msgs = ((InternalEObject)world).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - Constructor3DPackage.CANVAS__WORLD, null, msgs);
+			if (newWorld != null)
+				msgs = ((InternalEObject)newWorld).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - Constructor3DPackage.CANVAS__WORLD, null, msgs);
+			msgs = basicSetWorld(newWorld, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, Constructor3DPackage.CANVAS__WORLD, newWorld, newWorld));
 	}
 
 	/**
@@ -184,8 +191,8 @@ public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case Constructor3DPackage.CANVAS__FORM:
-				return ((InternalEList<?>)getForm()).basicRemove(otherEnd, msgs);
+			case Constructor3DPackage.CANVAS__WORLD:
+				return basicSetWorld(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -198,12 +205,12 @@ public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Constructor3DPackage.CANVAS__FORM:
-				return getForm();
 			case Constructor3DPackage.CANVAS__ID:
 				return getId();
 			case Constructor3DPackage.CANVAS__NAME:
 				return getName();
+			case Constructor3DPackage.CANVAS__WORLD:
+				return getWorld();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -217,15 +224,14 @@ public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Constructor3DPackage.CANVAS__FORM:
-				getForm().clear();
-				getForm().addAll((Collection<? extends Form>)newValue);
-				return;
 			case Constructor3DPackage.CANVAS__ID:
 				setId((Integer)newValue);
 				return;
 			case Constructor3DPackage.CANVAS__NAME:
 				setName((String)newValue);
+				return;
+			case Constructor3DPackage.CANVAS__WORLD:
+				setWorld((World)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -239,14 +245,14 @@ public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Constructor3DPackage.CANVAS__FORM:
-				getForm().clear();
-				return;
 			case Constructor3DPackage.CANVAS__ID:
 				setId(ID_EDEFAULT);
 				return;
 			case Constructor3DPackage.CANVAS__NAME:
 				setName(NAME_EDEFAULT);
+				return;
+			case Constructor3DPackage.CANVAS__WORLD:
+				setWorld((World)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -260,12 +266,12 @@ public class CanvasImpl extends MinimalEObjectImpl.Container implements Canvas {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Constructor3DPackage.CANVAS__FORM:
-				return form != null && !form.isEmpty();
 			case Constructor3DPackage.CANVAS__ID:
 				return id != ID_EDEFAULT;
 			case Constructor3DPackage.CANVAS__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case Constructor3DPackage.CANVAS__WORLD:
+				return world != null;
 		}
 		return super.eIsSet(featureID);
 	}

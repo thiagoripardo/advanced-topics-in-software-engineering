@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<constructor3D:Canvas xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:constructor3D="http://www.example.org/constructor3D" id="15" name="test">
+  <form xsi:type="constructor3D:Cubo" id="1">
+    <face id="1">
+      <vertex posX="0.1" posY="0.1" posZ="0.1" id="1"/>
+      <vertex posX="0.2" posY="0.2" posZ="0.2" id="2"/>
+      <vertex posX="0.3" posY="0.3" posZ="0.3" id="3"/>
+    </face>
+    <face id="2">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="3">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="4">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="5">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="6">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="7">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="8">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="9">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="10">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="11">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+    <face id="12">
+      <vertex/>
+      <vertex/>
+      <vertex/>
+    </face>
+  </form>
+</constructor3D:Canvas>

@@ -2,11 +2,11 @@
  */
 package constructor3D.impl;
 
-import constructor3D.Canvas;
 import constructor3D.Constructor3DPackage;
 import constructor3D.Face;
 import constructor3D.Form;
 
+import constructor3D.Vertex;
 import java.util.Collection;
 
 import org.eclipse.emf.common.notify.Notification;
@@ -20,8 +20,7 @@ import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
-import org.eclipse.emf.ecore.util.EObjectContainmentWithInverseEList;
-import org.eclipse.emf.ecore.util.EcoreUtil;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
@@ -32,25 +31,15 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link constructor3D.impl.FormImpl#getFace <em>Face</em>}</li>
- *   <li>{@link constructor3D.impl.FormImpl#getCanvas <em>Canvas</em>}</li>
  *   <li>{@link constructor3D.impl.FormImpl#getId <em>Id</em>}</li>
  *   <li>{@link constructor3D.impl.FormImpl#getName <em>Name</em>}</li>
+ *   <li>{@link constructor3D.impl.FormImpl#getVertex <em>Vertex</em>}</li>
+ *   <li>{@link constructor3D.impl.FormImpl#getFace <em>Face</em>}</li>
  * </ul>
  *
  * @generated
  */
 public abstract class FormImpl extends MinimalEObjectImpl.Container implements Form {
-	/**
-	 * The cached value of the '{@link #getFace() <em>Face</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getFace()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Face> face;
-
 	/**
 	 * The default value of the '{@link #getId() <em>Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -92,6 +81,26 @@ public abstract class FormImpl extends MinimalEObjectImpl.Container implements F
 	protected String name = NAME_EDEFAULT;
 
 	/**
+	 * The cached value of the '{@link #getVertex() <em>Vertex</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getVertex()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Vertex> vertex;
+
+	/**
+	 * The cached value of the '{@link #getFace() <em>Face</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getFace()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Face> face;
+
+	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -117,50 +126,9 @@ public abstract class FormImpl extends MinimalEObjectImpl.Container implements F
 	 */
 	public EList<Face> getFace() {
 		if (face == null) {
-			face = new EObjectContainmentWithInverseEList<Face>(Face.class, this, Constructor3DPackage.FORM__FACE, Constructor3DPackage.FACE__FORM);
+			face = new EObjectContainmentEList<Face>(Face.class, this, Constructor3DPackage.FORM__FACE);
 		}
 		return face;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Canvas getCanvas() {
-		if (eContainerFeatureID() != Constructor3DPackage.FORM__CANVAS) return null;
-		return (Canvas)eInternalContainer();
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetCanvas(Canvas newCanvas, NotificationChain msgs) {
-		msgs = eBasicSetContainer((InternalEObject)newCanvas, Constructor3DPackage.FORM__CANVAS, msgs);
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setCanvas(Canvas newCanvas) {
-		if (newCanvas != eInternalContainer() || (eContainerFeatureID() != Constructor3DPackage.FORM__CANVAS && newCanvas != null)) {
-			if (EcoreUtil.isAncestor(this, newCanvas))
-				throw new IllegalArgumentException("Recursive containment not allowed for " + toString());
-			NotificationChain msgs = null;
-			if (eInternalContainer() != null)
-				msgs = eBasicRemoveFromContainer(msgs);
-			if (newCanvas != null)
-				msgs = ((InternalEObject)newCanvas).eInverseAdd(this, Constructor3DPackage.CANVAS__FORM, Canvas.class, msgs);
-			msgs = basicSetCanvas(newCanvas, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, Constructor3DPackage.FORM__CANVAS, newCanvas, newCanvas));
 	}
 
 	/**
@@ -210,18 +178,11 @@ public abstract class FormImpl extends MinimalEObjectImpl.Container implements F
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
-	@Override
-	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case Constructor3DPackage.FORM__FACE:
-				return ((InternalEList<InternalEObject>)(InternalEList<?>)getFace()).basicAdd(otherEnd, msgs);
-			case Constructor3DPackage.FORM__CANVAS:
-				if (eInternalContainer() != null)
-					msgs = eBasicRemoveFromContainer(msgs);
-				return basicSetCanvas((Canvas)otherEnd, msgs);
+	public EList<Vertex> getVertex() {
+		if (vertex == null) {
+			vertex = new EObjectContainmentEList<Vertex>(Vertex.class, this, Constructor3DPackage.FORM__VERTEX);
 		}
-		return super.eInverseAdd(otherEnd, featureID, msgs);
+		return vertex;
 	}
 
 	/**
@@ -232,10 +193,10 @@ public abstract class FormImpl extends MinimalEObjectImpl.Container implements F
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
+			case Constructor3DPackage.FORM__VERTEX:
+				return ((InternalEList<?>)getVertex()).basicRemove(otherEnd, msgs);
 			case Constructor3DPackage.FORM__FACE:
 				return ((InternalEList<?>)getFace()).basicRemove(otherEnd, msgs);
-			case Constructor3DPackage.FORM__CANVAS:
-				return basicSetCanvas(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -246,30 +207,16 @@ public abstract class FormImpl extends MinimalEObjectImpl.Container implements F
 	 * @generated
 	 */
 	@Override
-	public NotificationChain eBasicRemoveFromContainerFeature(NotificationChain msgs) {
-		switch (eContainerFeatureID()) {
-			case Constructor3DPackage.FORM__CANVAS:
-				return eInternalContainer().eInverseRemove(this, Constructor3DPackage.CANVAS__FORM, Canvas.class, msgs);
-		}
-		return super.eBasicRemoveFromContainerFeature(msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case Constructor3DPackage.FORM__FACE:
-				return getFace();
-			case Constructor3DPackage.FORM__CANVAS:
-				return getCanvas();
 			case Constructor3DPackage.FORM__ID:
 				return getId();
 			case Constructor3DPackage.FORM__NAME:
 				return getName();
+			case Constructor3DPackage.FORM__VERTEX:
+				return getVertex();
+			case Constructor3DPackage.FORM__FACE:
+				return getFace();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -283,18 +230,19 @@ public abstract class FormImpl extends MinimalEObjectImpl.Container implements F
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case Constructor3DPackage.FORM__FACE:
-				getFace().clear();
-				getFace().addAll((Collection<? extends Face>)newValue);
-				return;
-			case Constructor3DPackage.FORM__CANVAS:
-				setCanvas((Canvas)newValue);
-				return;
 			case Constructor3DPackage.FORM__ID:
 				setId((Integer)newValue);
 				return;
 			case Constructor3DPackage.FORM__NAME:
 				setName((String)newValue);
+				return;
+			case Constructor3DPackage.FORM__VERTEX:
+				getVertex().clear();
+				getVertex().addAll((Collection<? extends Vertex>)newValue);
+				return;
+			case Constructor3DPackage.FORM__FACE:
+				getFace().clear();
+				getFace().addAll((Collection<? extends Face>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -308,17 +256,17 @@ public abstract class FormImpl extends MinimalEObjectImpl.Container implements F
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case Constructor3DPackage.FORM__FACE:
-				getFace().clear();
-				return;
-			case Constructor3DPackage.FORM__CANVAS:
-				setCanvas((Canvas)null);
-				return;
 			case Constructor3DPackage.FORM__ID:
 				setId(ID_EDEFAULT);
 				return;
 			case Constructor3DPackage.FORM__NAME:
 				setName(NAME_EDEFAULT);
+				return;
+			case Constructor3DPackage.FORM__VERTEX:
+				getVertex().clear();
+				return;
+			case Constructor3DPackage.FORM__FACE:
+				getFace().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -332,14 +280,14 @@ public abstract class FormImpl extends MinimalEObjectImpl.Container implements F
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case Constructor3DPackage.FORM__FACE:
-				return face != null && !face.isEmpty();
-			case Constructor3DPackage.FORM__CANVAS:
-				return getCanvas() != null;
 			case Constructor3DPackage.FORM__ID:
 				return id != ID_EDEFAULT;
 			case Constructor3DPackage.FORM__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
+			case Constructor3DPackage.FORM__VERTEX:
+				return vertex != null && !vertex.isEmpty();
+			case Constructor3DPackage.FORM__FACE:
+				return face != null && !face.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

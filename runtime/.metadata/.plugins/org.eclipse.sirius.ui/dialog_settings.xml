@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExportRepresentationsAsImagesDialog">
+		<item value="JPG" key="ExportRepresentationsAsImagesDialog.imageFormat"/>
+		<list key="ExportRepresentationsAsImagesDialog.file">
+			<item value="/home/thiagoripardo/Downloads/ObeoDesigner-Community/runtime-New_configuration/cons3D"/>
+			<item value="/home/thiagoripardo/Downloads/ObeoDesigner-Community/runtime-New_configuration/cons3D/new canvas.jpg"/>
+		</list>
+	</section>
+</section>

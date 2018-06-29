@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;cons3D&apos;" deleteContents="true" description="Delete resource &apos;cons3D&apos;" element1="/cons3D" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1525799588570"/>
+</session>

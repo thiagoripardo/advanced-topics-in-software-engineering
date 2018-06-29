@@ -7,20 +7,19 @@
   <foreignModel>constructor3D.ecore</foreignModel>
   <genPackages prefix="Constructor3D" disposableProviderFactory="true" ecorePackage="constructor3D.ecore#/">
     <genClasses ecoreClass="constructor3D.ecore#//Canvas">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Canvas/form"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Canvas/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Canvas/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Canvas/world"/>
     </genClasses>
     <genClasses image="false" ecoreClass="constructor3D.ecore#//Form">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Form/face"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference constructor3D.ecore#//Form/canvas"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Form/id"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Form/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Form/vertex"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Form/face"/>
     </genClasses>
     <genClasses ecoreClass="constructor3D.ecore#//Face">
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference constructor3D.ecore#//Face/form"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Face/id"/>
-      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference constructor3D.ecore#//Face/vertex"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Face/vertexList"/>
     </genClasses>
     <genClasses ecoreClass="constructor3D.ecore#//Vertex">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Vertex/posX"/>
@@ -31,5 +30,17 @@
     <genClasses ecoreClass="constructor3D.ecore#//Cube"/>
     <genClasses ecoreClass="constructor3D.ecore#//Tree"/>
     <genClasses ecoreClass="constructor3D.ecore#//House"/>
+    <genClasses ecoreClass="constructor3D.ecore#//Grid">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Grid/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Grid/column"/>
+    </genClasses>
+    <genClasses ecoreClass="constructor3D.ecore#//Column">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//Column/id"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//Column/form"/>
+    </genClasses>
+    <genClasses ecoreClass="constructor3D.ecore#//World">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference constructor3D.ecore#//World/grid"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute constructor3D.ecore#//World/id"/>
+    </genClasses>
   </genPackages>
 </genmodel:GenModel>

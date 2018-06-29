@@ -15,10 +15,10 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link constructor3D.Form#getFace <em>Face</em>}</li>
- *   <li>{@link constructor3D.Form#getCanvas <em>Canvas</em>}</li>
  *   <li>{@link constructor3D.Form#getId <em>Id</em>}</li>
  *   <li>{@link constructor3D.Form#getName <em>Name</em>}</li>
+ *   <li>{@link constructor3D.Form#getVertex <em>Vertex</em>}</li>
+ *   <li>{@link constructor3D.Form#getFace <em>Face</em>}</li>
  * </ul>
  *
  * @see constructor3D.Constructor3DPackage#getForm()
@@ -29,7 +29,6 @@ public interface Form extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Face</b></em>' containment reference list.
 	 * The list contents are of type {@link constructor3D.Face}.
-	 * It is bidirectional and its opposite is '{@link constructor3D.Face#getForm <em>Form</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Face</em>' containment reference list isn't clear,
@@ -38,39 +37,10 @@ public interface Form extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Face</em>' containment reference list.
 	 * @see constructor3D.Constructor3DPackage#getForm_Face()
-	 * @see constructor3D.Face#getForm
-	 * @model opposite="form" containment="true"
+	 * @model containment="true"
 	 * @generated
 	 */
 	EList<Face> getFace();
-
-	/**
-	 * Returns the value of the '<em><b>Canvas</b></em>' container reference.
-	 * It is bidirectional and its opposite is '{@link constructor3D.Canvas#getForm <em>Form</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Canvas</em>' container reference isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Canvas</em>' container reference.
-	 * @see #setCanvas(Canvas)
-	 * @see constructor3D.Constructor3DPackage#getForm_Canvas()
-	 * @see constructor3D.Canvas#getForm
-	 * @model opposite="form" required="true" transient="false"
-	 * @generated
-	 */
-	Canvas getCanvas();
-
-	/**
-	 * Sets the value of the '{@link constructor3D.Form#getCanvas <em>Canvas</em>}' container reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Canvas</em>' container reference.
-	 * @see #getCanvas()
-	 * @generated
-	 */
-	void setCanvas(Canvas value);
 
 	/**
 	 * Returns the value of the '<em><b>Id</b></em>' attribute.
@@ -83,7 +53,7 @@ public interface Form extends EObject {
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(int)
 	 * @see constructor3D.Constructor3DPackage#getForm_Id()
-	 * @model dataType="org.eclipse.emf.ecore.xml.type.Int"
+	 * @model
 	 * @generated
 	 */
 	int getId();
@@ -123,5 +93,21 @@ public interface Form extends EObject {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Vertex</b></em>' containment reference list.
+	 * The list contents are of type {@link constructor3D.Vertex}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Vertex</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Vertex</em>' containment reference list.
+	 * @see constructor3D.Constructor3DPackage#getForm_Vertex()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Vertex> getVertex();
 
 } // Form

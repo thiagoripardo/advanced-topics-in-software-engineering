@@ -96,6 +96,18 @@ public class Constructor3DAdapterFactory extends AdapterFactoryImpl {
 				return createHouseAdapter();
 			}
 			@Override
+			public Adapter caseGrid(Grid object) {
+				return createGridAdapter();
+			}
+			@Override
+			public Adapter caseColumn(Column object) {
+				return createColumnAdapter();
+			}
+			@Override
+			public Adapter caseWorld(World object) {
+				return createWorldAdapter();
+			}
+			@Override
 			public Adapter defaultCase(EObject object) {
 				return createEObjectAdapter();
 			}
@@ -210,6 +222,48 @@ public class Constructor3DAdapterFactory extends AdapterFactoryImpl {
 	 * @generated
 	 */
 	public Adapter createHouseAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link constructor3D.Grid <em>Grid</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see constructor3D.Grid
+	 * @generated
+	 */
+	public Adapter createGridAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link constructor3D.Column <em>Column</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see constructor3D.Column
+	 * @generated
+	 */
+	public Adapter createColumnAdapter() {
+		return null;
+	}
+
+	/**
+	 * Creates a new adapter for an object of class '{@link constructor3D.World <em>World</em>}'.
+	 * <!-- begin-user-doc -->
+	 * This default implementation returns null so that we can easily ignore cases;
+	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
+	 * <!-- end-user-doc -->
+	 * @return the new adapter.
+	 * @see constructor3D.World
+	 * @generated
+	 */
+	public Adapter createWorldAdapter() {
 		return null;
 	}
 

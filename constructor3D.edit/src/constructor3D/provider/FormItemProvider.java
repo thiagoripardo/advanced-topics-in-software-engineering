@@ -125,6 +125,7 @@ public class FormItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
+			childrenFeatures.add(Constructor3DPackage.Literals.FORM__VERTEX);
 			childrenFeatures.add(Constructor3DPackage.Literals.FORM__FACE);
 		}
 		return childrenFeatures;
@@ -174,6 +175,7 @@ public class FormItemProvider
 			case Constructor3DPackage.FORM__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
+			case Constructor3DPackage.FORM__VERTEX:
 			case Constructor3DPackage.FORM__FACE:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
@@ -191,6 +193,11 @@ public class FormItemProvider
 	@Override
 	protected void collectNewChildDescriptors(Collection<Object> newChildDescriptors, Object object) {
 		super.collectNewChildDescriptors(newChildDescriptors, object);
+
+		newChildDescriptors.add
+			(createChildParameter
+				(Constructor3DPackage.Literals.FORM__VERTEX,
+				 Constructor3DFactory.eINSTANCE.createVertex()));
 
 		newChildDescriptors.add
 			(createChildParameter
